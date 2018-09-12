@@ -8,65 +8,96 @@ body {
   font-size: 10px;
 }
 
+/* keep container as it now is */
 .container {
   background-color: #dadada;
   margin: 0 auto;
   width: 420px;
 }
 
-/* nav is the black box displayed at the top of the code */
+
+/* nav is the fixed box displayed at the top of the code */
 nav {
-  background-color: #000000;
+  background-color: #yellow;
   margin: 0 auto;
+  width: 420px;
   padding: 10px 0px 15px 15px;
+  position: fixed;
+}
+
+
+
+/* I need: (1) Route, (2) Destination, and (3) Arrival column
+headings. The actual routes numbers themselves (not column
+heading) must be bolded */
+
+ul {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 50px 0px 15px 15px;
   position: fixed;
   width: 420px;
 }
 
-/* .restaurant-list is the parent to .content & .location */
-.restaurant-list {
+li {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 50px 0px 15px 15px;
+  position: fixed;
+  width: 420px;
+}
+
+/* .bus-list is the parent to .route, .destination, & .arrival */
+/* keep container as it now is */
+.bus-list-details {
     padding-top: 50px;
 }
 
-.location {
+.route {
     border-bottom: 1px solid #777;
-    background-color: #dadada;
-    float: left;
+
+    font-weight: bold;
+    font-size: 125%;
+    border-bottom: 1px solid #777;
+    background-color: #fafafa;
     padding: 20px;
     width: 100%;
 }
 
-/* mouse over */
-.location:hover {
-    background: pink;
-}
-
-.location h1 {
+.route h2 {
     font-size: 1.8em;
     font-weight: 900;
+    font-weight: bold;
 }
 
-.location h3 {
-    font-size: 1.4em;
-    margin-top: 5px;
-}
-
-.content {
+.destination {
     float: left;
     width: 90%;
 }
 
-.arrow-left {
-    float: left;
-    margin-top: 8px;
-    text-align: left;
-    width: 10%;
+.destination h2 {
+    font-size: 1.8em;
+    font-weight: 900;
+    font-weight: bold;
 }
 
-/* .arrow needs to float */
-.arrow {
-    float: right;
-    text-align: right;
-    margin-top: 8px;
-    width: 10%;
+.destination h3 {
+    font-size: 1.4em;
+    margin-top: 5px;
+}
+
+.arrival {
+    float: left;
+    width: 90%;
+}
+
+.arrival h2 {
+    font-size: 1.8em;
+    font-weight: 900;
+    font-weight: bold;
+}
+
+.arrival h3 {
+    font-size: 1.4em;
+    margin-top: 5px;
 }
